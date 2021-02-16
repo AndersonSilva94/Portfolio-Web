@@ -24,7 +24,12 @@
             color: white;
             text-align: center;
         }
-        #nav{
+        #foto-perfil{
+            width: 400px;
+            border-radius: 50%;
+            border: 10px solid white;
+        }
+        #nav, #sobre{
             color: #B94A3E;
         }
         .descricao{
@@ -36,7 +41,7 @@
         a{
             text-decoration: none;
         }
-        #nav-lista a, #cidade a, #cursos a{
+        #nav-lista a, .descricao, #cidade a, #cursos a{
             color: #B94A3E;
         }
         #nav-lista a:hover, #cidade a:hover, #cursos a:hover{
@@ -64,12 +69,17 @@
         #redes-lista p a img{
             width: 70px;
         }
-
+        #rodape a{
+            color: #121B22;
+        }
+        #rodape a:hover{
+            color: #204254;
+        }
     </style>
 </head>
 <body>
     <h1 id="nome">Anderson dos Santos Silva</h1>
-    <img src="imagens/foto-perfil.jpg" alt="Foto de Anderson Silva" width="400px" id="foto-perfil">
+    <img src="imagens/foto-perfil.jpg" alt="Foto de Anderson Silva" id="foto-perfil">
     <hr>
     <h3 id="nav">Navegue pelo portfólio</h3>
     <ul id="nav-lista">
@@ -100,7 +110,7 @@
         <p><a href="https://pin.it/2ot8fAS"><img src="imagens/003-pinterest-sign.svg" alt="Ícone Pinterest"></a></p>
     </div>
     <br><br>
-    <p><a href="#foto-perfil">Voltar para minha foto</a></p>
+    <p id="rodape"><a href="#foto-perfil">Voltar para minha foto</a></p>
     
 </body>
 </html>
