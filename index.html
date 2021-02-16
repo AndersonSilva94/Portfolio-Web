@@ -15,6 +15,9 @@
         h1, h2, h3{
             font-family: 'Poppins', sans-serif;
         }
+        li{
+            list-style: none;
+        }
         #nome{
             font-size: 40px;
             font-weight: 800;
@@ -28,18 +31,34 @@
             font-size: 18px;
             
         }
-        #cidade a, #cursos a{
+        a{
             text-decoration: none;
+        }
+        #cidade a, #cursos a{
             color: #B94A3E;
         }
         #cidade a:hover, #cursos a:hover{
             color:#d18077
         }
+        #habilidades, #lista-habilidades li, #redes{
+            color: #121B22;
+        }
+        #webdesign{
+            font-size: 19px;
+        }
+        #html{
+            font-size: 17px;
+        }
+        #css{
+            font-size: 17px;
+        }
+        
+
     </style>
 </head>
 <body>
     <h1 id="nome">Anderson dos Santos Silva</h1>
-    <img src="imagens/foto-perfil.jpg" alt="Foto de Anderson Silva" width="400px" id="foto">
+    <img src="imagens/foto-perfil.jpg" alt="Foto de Anderson Silva" width="400px" id="foto-perfil">
     <hr>
     <h3>Navegue pelo portfólio</h3>
     <ul>
@@ -53,12 +72,12 @@
     <p class="descricao">Curso <strong id="cursos"><a href="https://www.betrybe.com/" target="_blank">Desenvolvimento de Software na <em>Trybe</em></a></strong> e já estou me graduando em <strong id="cursos"><a href="https://www.ufam.edu.br/" target="_blank"><em>Design</em> na Universidade Federal do Amazonas</a></strong>. Tenho um gosto enorme por trabalhos em equipe, onde exista troca de conhecimentos e culturas entre pessoas.</p>
     <hr>
     <h2 id="habilidades">Habilidades</h2>
-    <ul>
-        <li><strong>HTML</strong></li>
-        <li><strong>CSS</strong></li>
-        <li>JavaScript</li>
-        <li>Git e Github</li>
-        <li><strong>WebDesign</strong></li>
+    <ul id="lista-habilidades">
+        <li id="html"><strong>HTML</strong></li>
+        <li id="css"><strong>CSS</strong></li>
+        <li id="java">JavaScript</li>
+        <li id="git">Git e Github</li>
+        <li id="webdesign"><strong>WebDesign</strong></li>
     </ul>
     <hr>
     <h2 id="redes">Siga minhas Redes Sociais</h2>
@@ -67,7 +86,7 @@
     <p><a href="https://github.com/AndersonSilva94" target="_blank">Github</a></p>
     <p><a href="https://www.instagram.com/it_s_andy" target="_blank">Instagram</a></p>
     <br><br>
-    <p><a href="#foto">Voltar para minha foto</a></p>
+    <p><a href="#foto-perfil">Voltar para minha foto</a></p>
     
 </body>
 </html>
