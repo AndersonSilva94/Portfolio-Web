@@ -24,20 +24,22 @@
             color: white;
             text-align: center;
         }
+        #nav{
+            color: #B94A3E;
+        }
         .descricao{
             font-family: 'Open Sans', sans-serif;
         }
         #cidade, #cursos{
             font-size: 18px;
-            
         }
         a{
             text-decoration: none;
         }
-        #cidade a, #cursos a{
+        #nav-lista a, #cidade a, #cursos a{
             color: #B94A3E;
         }
-        #cidade a:hover, #cursos a:hover{
+        #nav-lista a:hover, #cidade a:hover, #cursos a:hover{
             color:#d18077
         }
         #habilidades, #lista-habilidades li, #redes{
@@ -52,7 +54,16 @@
         #css{
             font-size: 17px;
         }
-        
+        /* solução apresentada para mudança de cores de imagens em svg no link: https://qastack.com.br/programming/22252472/how-to-change-the-color-of-an-svg-element*/
+        #redes-lista p a{
+            filter: invert(5%) sepia(4%) saturate(7403%) hue-rotate(165deg) brightness(95%) contrast(89%);
+        }
+        #redes-lista p a:hover{
+            filter: invert(18%) sepia(6%) saturate(4977%) hue-rotate(157deg) brightness(99%) contrast(84%)
+        }
+        #redes-lista p a img{
+            width: 70px;
+        }
 
     </style>
 </head>
@@ -60,8 +71,8 @@
     <h1 id="nome">Anderson dos Santos Silva</h1>
     <img src="imagens/foto-perfil.jpg" alt="Foto de Anderson Silva" width="400px" id="foto-perfil">
     <hr>
-    <h3>Navegue pelo portfólio</h3>
-    <ul>
+    <h3 id="nav">Navegue pelo portfólio</h3>
+    <ul id="nav-lista">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#redes">Siga minhas Redes Sociais</a></li>
@@ -81,10 +92,13 @@
     </ul>
     <hr>
     <h2 id="redes">Siga minhas Redes Sociais</h2>
-    <p><a href="https://www.linkedin.com/in/andssilva" target="_blank">Linkedin</a></p>
-    <p><a href="https://www.behance.net/andersonsilva23" target="_blank">Behance</a></p>
-    <p><a href="https://github.com/AndersonSilva94" target="_blank">Github</a></p>
-    <p><a href="https://www.instagram.com/it_s_andy" target="_blank">Instagram</a></p>
+    <div id="redes-lista">
+        <p><a href="https://www.linkedin.com/in/andssilva" target="_blank"><img src="imagens/002-linkedin-sign.svg" alt="Ícone Linkedin"></a></p>
+        <p><a href="https://www.behance.net/andersonsilva23" target="_blank"><img src="imagens/001-behance.svg" alt="Ícone Behance"></a></p>
+        <p><a href="https://github.com/AndersonSilva94" target="_blank"><img src="imagens/github-sign.svg" alt="Ícone Github"></a></p>
+        <p><a href="https://www.instagram.com/it_s_andy" target="_blank"><img src="imagens/004-instagram.svg" alt="Ícone Instagram"></a></p>
+        <p><a href="https://pin.it/2ot8fAS"><img src="imagens/003-pinterest-sign.svg" alt="Ícone Pinterest"></a></p>
+    </div>
     <br><br>
     <p><a href="#foto-perfil">Voltar para minha foto</a></p>
     
