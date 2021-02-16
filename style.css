@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(#121B22,#204254, #B94A3E);
 }
 h1, h2, h3{
@@ -10,6 +12,12 @@ li{
 #nome{
     font-size: 40px;
     font-weight: 800;
+    margin-bottom: 0;
+}
+#profissao{
+    margin-top: 0;
+}
+#profissao, #nome{
     color: white;
     text-align: center;
 }
@@ -18,6 +26,23 @@ li{
     border-radius: 50%;
     border: 10px solid white;
 }
+#menu{
+    height: 55px;
+    width: 100%;
+    background-color: #B94A3E;
+}
+#menu ul{
+    float: right;
+    margin-right: 50px;
+}
+#menu ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline;
+    margin-right: 15px;
+}
+
 #nav, #sobre{
     color: #B94A3E;
 }
@@ -30,10 +55,22 @@ li{
 a{
     text-decoration: none;
 }
-#nav-lista a, .descricao, #cidade a, #cursos a{
+#nav-lista a{
+    color: #121B22;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#nav-lista a:hover{
+    background-color: white;
+    color: #204254;
+} 
+#perfil{
+    clear: both;
+}
+.descricao, #cidade a, #cursos a{
     color: #B94A3E;
 }
-#nav-lista a:hover, #cidade a:hover, #cursos a:hover{
+#cidade a:hover, #cursos a:hover{
     color:#d18077
 }
 #habilidades, #lista-habilidades li, #redes{
