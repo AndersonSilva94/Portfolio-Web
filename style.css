@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#121B22,#204254, #B94A3E);
 }
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
@@ -9,9 +8,15 @@ h1, h2, h3{
 li{
     list-style: none;
 }
+#perfil{
+    background-color: #121B22;
+    padding: 20px 30px;
+    height: 250px;
+}
 #nome{
     font-size: 40px;
     font-weight: 800;
+    margin-top: 0;
     margin-bottom: 0;
 }
 #profissao{
@@ -22,9 +27,13 @@ li{
     text-align: center;
 }
 #foto-perfil{
-    width: 400px;
+    text-align: center;
+}
+#foto-perfil img{
+    width: 300px;
     border-radius: 50%;
-    border: 10px solid white;
+    padding: 10px;
+    background-color: white;
 }
 #menu{
     height: 55px;
@@ -63,10 +72,8 @@ a{
 #nav-lista a:hover{
     background-color: white;
     color: #204254;
+    box-shadow: 2px 2px 2px gray;
 } 
-#perfil{
-    clear: both;
-}
 .descricao, #cidade a, #cursos a{
     color: #B94A3E;
 }
