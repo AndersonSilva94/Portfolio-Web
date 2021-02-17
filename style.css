@@ -74,27 +74,45 @@ a{
 #sobre{
     background-color: #A0BACC;
     padding: 150px 30px 40px;
+}
+#sobre h2{
     color: #022534;
 }
-#paragrafo-sobre{
-    display: inline;
+#sobre hr{
+    border-color: #022534;
 }
-#foto-sobre img{
-    width: 400px;
-    display: inline;
+#conteudo-sobre{
+    display: flex;
+    margin-top: 25px;
+    padding: 5px 10px;
+}
+#foto-sobre{
+    width: 300px;
+    padding: 10px;
+    background-color: #B94A3E;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+#paragrafo-sobre{
+    width: 65%;
+    text-align: justify;
+    align-self: center;
 }
 .descricao{
     font-family: 'Open Sans', sans-serif;
 }
-#cidade, #cursos{
+.cursos a{
+    text-decoration: underline;
+}
+#cidade, .cursos{
     font-size: 18px;
 }
 
-.descricao, #cidade a, #cursos a{
+.descricao, #cidade a, .cursos a{
     font-weight: bold;
     color: #022534;
 }
-#cidade a:hover, #cursos a:hover{
+#cidade a:hover, .cursos a:hover{
     color:#204254
 }
 #habilidades, #lista-habilidades li, #redes{
