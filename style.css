@@ -118,7 +118,7 @@ a{
 .descricao{
     font-family: 'Open Sans', sans-serif;
 }
-.cursos a{
+#cidade, .cursos a{
     text-decoration: underline;
 }
 #cidade, .cursos{
