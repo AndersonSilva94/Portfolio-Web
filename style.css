@@ -97,6 +97,7 @@ a{
     width: 65%;
     text-align: justify;
     align-self: center;
+    line-height: 1.8;
 }
 .descricao{
     font-family: 'Open Sans', sans-serif;
@@ -112,19 +113,19 @@ a{
     color: #022534;
 }
 #cidade a:hover, .cursos a:hover{
-    color:#204254
+    color:#08546C
 }
 
 /*Seção Habilidades*/
 #habilidades{
-    background-color:#204254;
+    background-color:#08546C;
     padding: 40px 30px;
 }
-#habilidades h2{
+#habilidades h2, #redes h2{
     margin-top: 0;
     color: #A0BACC;
 }
-#habilidades hr{
+#habilidades hr, #redes hr{
     border-color: #A0BACC;
 }
 #lista-habilidades{
@@ -143,7 +144,7 @@ a{
 }
 #lista-habilidades li:hover{
     background-color: #A0BACC;
-    color: #204254;
+    color:#08546C;
 }
 .webdesign{
     font-size: 20px;
@@ -153,15 +154,25 @@ a{
 }
 
 /*Seção redes Sociais*/
-/* solução apresentada para mudança de cores de imagens em svg no link: https://qastack.com.br/programming/22252472/how-to-change-the-color-of-an-svg-element*/
-#redes-lista p a{
-    filter: invert(5%) sepia(4%) saturate(7403%) hue-rotate(165deg) brightness(95%) contrast(89%);
+#redes{
+    background-color:#022534;
+    padding: 40px 30px;
 }
+/* solução apresentada para mudança de cores de imagens em svg no link: https://qastack.com.br/programming/22252472/how-to-change-the-color-of-an-svg-element */
 #redes-lista p a:hover{
-    filter: invert(18%) sepia(6%) saturate(4977%) hue-rotate(157deg) brightness(99%) contrast(84%)
+    filter: invert(23%) sepia(31%) saturate(3252%) hue-rotate(166deg) brightness(89%) contrast(94%)
+}
+#redes-lista p a{
+    filter: invert(96%) sepia(8%) saturate(5228%) hue-rotate(179deg) brightness(86%) contrast(84%)
+}
+#redes-lista{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 90px;
+    margin-top: 45px;
 }
 #redes-lista p a img{
-    width: 70px;
+    width: 90px;
 }
 #rodape a{
     color: #121B22;
