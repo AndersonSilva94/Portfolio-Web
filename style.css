@@ -158,6 +158,9 @@ a{
     margin-right: 10px;
     color: #A0BACC;
 }
+#lista-habilidades li:nth-child(odd){
+    font-style: italic;
+}
 #lista-habilidades li:hover{
     background-color: #A0BACC;
     color:#08546C;
