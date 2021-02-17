@@ -83,13 +83,13 @@ a{
 }
 #conteudo-sobre{
     display: flex;
-    margin-top: 25px;
+    margin-top: 45px;
     padding: 5px 10px;
 }
 #foto-sobre img{
     width: 300px;
     padding: 10px;
-    background-color: #B94A3E;
+    background-color: #968EA9;
     border-radius: 10px;
     margin-right: 25px;
 }
@@ -110,10 +110,10 @@ a{
 }
 .descricao, #cidade a, .cursos a{
     font-weight: bold;
-    color: #022534;
+    color:#08546C;
 }
 #cidade a:hover, .cursos a:hover{
-    color:#08546C
+    color:#022534
 }
 
 /*Seção Habilidades*/
@@ -159,24 +159,39 @@ a{
     padding: 40px 30px;
 }
 /* solução apresentada para mudança de cores de imagens em svg no link: https://qastack.com.br/programming/22252472/how-to-change-the-color-of-an-svg-element */
-#redes-lista p a:hover{
+.redes-lista p a:hover{
     filter: invert(23%) sepia(31%) saturate(3252%) hue-rotate(166deg) brightness(89%) contrast(94%)
 }
-#redes-lista p a{
+.redes-lista p a{
     filter: invert(96%) sepia(8%) saturate(5228%) hue-rotate(179deg) brightness(86%) contrast(84%)
 }
-#redes-lista{
+.redes-lista{
     display: flex;
     justify-content: space-around;
     padding: 0px 90px;
     margin-top: 45px;
 }
-#redes-lista p a img{
+#redes-lista1{
+    margin-top: 0px;
+    padding: 0 270px;
+    margin-bottom: 45px;
+}
+.redes-lista p a img{
     width: 90px;
 }
+
+/*Rodapé*/
+#rodape{
+    background-color: #022534;
+    padding: 0px 30px 20px 30px;
+}
+#rodape p{
+    text-align: center;
+    margin: 0;
+}
 #rodape a{
-    color: #121B22;
+    color: #A0BACC;
 }
 #rodape a:hover{
-    color: #204254;
+    color: #08546C;
 }
