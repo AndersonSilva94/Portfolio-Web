@@ -8,8 +8,42 @@ h1, h2, h3{
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
+
+/*Seção de Menu de Navegação*/
+#menu{
+    height: 55px;
+    width: 100%;
+    background-color: #022534;
+}
+#menu ul{
+    float: right;
+    margin-right: 50px;
+}
+#menu ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline;
+    margin-right: 15px;
+}
+
+#nav-lista a{
+    color: #A0BACC;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#nav-lista a:hover{
+    background-color: white;
+    color: #204254;
+    box-shadow: 2px 2px 2px gray;
+} 
+
+/*Seção Perfil*/
 #perfil{
-    background-color: #121B22;
+    background-color: #022534;
     padding: 20px 30px;
     height: 250px;
 }
@@ -35,25 +69,19 @@ li{
     padding: 10px;
     background-color: white;
 }
-#menu{
-    height: 55px;
-    width: 100%;
-    background-color: #B94A3E;
-}
-#menu ul{
-    float: right;
-    margin-right: 50px;
-}
-#menu ul li{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    vertical-align: middle;
-    display: inline;
-    margin-right: 15px;
-}
 
-#nav, #sobre{
-    color: #B94A3E;
+/*Seção Sobre*/
+#sobre{
+    background-color: #A0BACC;
+    padding: 150px 30px 40px;
+    color: #022534;
+}
+#paragrafo-sobre{
+    display: inline;
+}
+#foto-sobre img{
+    width: 400px;
+    display: inline;
 }
 .descricao{
     font-family: 'Open Sans', sans-serif;
@@ -61,24 +89,13 @@ li{
 #cidade, #cursos{
     font-size: 18px;
 }
-a{
-    text-decoration: none;
-}
-#nav-lista a{
-    color: #121B22;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-#nav-lista a:hover{
-    background-color: white;
-    color: #204254;
-    box-shadow: 2px 2px 2px gray;
-} 
+
 .descricao, #cidade a, #cursos a{
-    color: #B94A3E;
+    font-weight: bold;
+    color: #022534;
 }
 #cidade a:hover, #cursos a:hover{
-    color:#d18077
+    color:#204254
 }
 #habilidades, #lista-habilidades li, #redes{
     color: #121B22;
